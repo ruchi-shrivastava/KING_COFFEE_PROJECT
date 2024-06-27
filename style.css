@@ -553,7 +553,7 @@ body {
 /* shop and slider page made by ruchi */
 .container-shop{
     width:100%;
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
 .shop-header{
     display: flex;
@@ -567,9 +567,10 @@ body {
      /* bottom:4rem; */
      /* bottom: 6rem; */
      text-align: center;
+     margin: 0;
     }
 
-    .line-class{
+    .container-shop .line-class{
         width:5%;
         background-color: #3D261B;
         height: 0.13rem;
