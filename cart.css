@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cart-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.cart-container .cart-head{
+    
+}
+
+.cart-container .close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1ren;
+    background: #d2d1d1;
+    transition: all 0.3s ease-in-out;
+    i{
+        font-size: 1.5rem;
+        color:#838080;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.cart-container .close:hover{
+    cursor: pointer;
+    background-color: #ada4a4;
+    i{
+        color: black;
+    }
+}
+
+.empty-cart{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70vh;
+    p{
+        margin-top: 2rem;
+        color: #bab5b5;
+    }
+}
+
+
+.wp-logo{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(102, 218, 102);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    right: 30px;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wp-logo i{
+    font-size: 25px;
+    color: white;
+}
+
+.back-to-top{
+    height: 30px;
+    width: 30px;
+    background-color: #26201d;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    right: 30px;
+    bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-to-top i{
+    font-size: 30px;
+    color: white;
+}
