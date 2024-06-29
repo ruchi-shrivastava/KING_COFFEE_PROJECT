@@ -1,0 +1,689 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    color: white;
+    overflow-x: hidden;
+    /* position: relative; */
+}
+header{
+    width: 100%;
+    overflow: visible;
+    /* position: fixed; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.offer {
+    width: 100%;
+    height: 35px;
+    background-color: #3D261B;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.90rem;
+    text-align: center;
+    z-index: 0;
+    position: fixed;
+    top:0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10px;
+    background-color: white;
+    position: fixed;
+    top: 35px;
+    /* left: 0; */
+    width: 100%;
+    z-index: 2;
+    padding-inline: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+
+nav .hamburger{
+    min-width: 40px;
+}
+nav .hamburger a{
+    color: #212529;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+header nav .nav-logo{
+
+}
+header nav .nav-logo img{
+    width: 90px;
+    /* height: 110px; */
+}
+
+header nav .nav-sec{
+    width: 70%;
+}
+
+
+header nav .nav-sec ul{
+    display: flex;
+    flex-wrap: wrap;
+    /* row-gap: 10px; */
+    list-style-type: none;
+    li{
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        margin-right: 5px;
+        font-size: 0.80rem;
+        padding: 10px;
+        cursor: pointer;
+        font-weight:bolder;
+        
+    }
+    li::after{
+        content: '';
+        position: absolute;
+        /* width: 100%; */
+        height: 0.01rem;
+        bottom: 0;
+        left: 0;
+        background-color: #a45f41;
+        transition: width 0.8s ease;
+        width: 0;
+    }
+    li:hover::after{
+        width: 100%;
+        a{
+            color: #a45f41;
+        }
+    }
+    li:hover {
+        a{
+            color: #a45f41;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: #212529;
+        transition: color 0.4s ease;
+    }
+    
+}
+
+header nav .nav-icons{
+    margin-right: 20px;
+
+}
+header nav .nav-icons ul {
+    display: flex;
+    gap: 12px;
+    list-style-type: none;
+}
+
+header nav .nav-icons ul a {
+    text-decoration: none;
+    color: #212529;
+}
+
+header nav .nav-icons ul li {
+    text-transform: uppercase;
+    /* margin-right: 1rem; */
+    font-size: 1.5rem;
+}
+
+
+
+.banner-div {
+    margin-top: 130px;
+    height: 270px;
+    width: 100%;
+    background-image: url('https://www.kingscoffeeindia.co.in/cdn/shop/files/newsletter.png?v=1655801945');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.banner-div h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.items-container {
+    color: black;
+    width: 95%;
+    height: auto; 
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px
+}
+.items-container div {
+    text-align: center;
+    height: 380px;
+    width: 330px;
+    margin-bottom: 20px; /* Added margin-bottom for spacing between items */
+}
+.items-container div p {
+    margin-top: 10px;
+}
+.items-container div h4 {
+    margin-top: 10px;
+    color: rgb(164,95,65);
+}
+.items-container .img-div {
+    height: 80%;
+    width: 100%;
+    padding-top: 70%;
+}
+.items-container .icons-div{
+    height: 40px;
+    width: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition-duration: 400ms;
+    a{
+
+        text-decoration: none;
+        color:black;
+    }
+}
+.items-container .box{
+    a{
+        text-decoration: none;
+        color:black
+    }
+    a:hover{
+        color: #833d1a;
+    }
+}
+.items-container .box:hover .icons-div{
+    opacity: 1;
+}
+.items-container .icons-div i{
+    font-size: 30px;
+}
+.items-container .icons-div div{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+.items-container .icons-div div:hover{
+    background-color: #a3572a;
+}
+.items-container #img-div1 {
+    background-image: url('https://www.kingscoffeeindia.co.in/cdn/shop/products/KIngscoffeemochacan_1.jpg?v=1670476904');
+    background-position: center;
+    background-size: cover;
+}
+.items-container #img-div2 {
+    background-image: url('https://www.kingscoffeeindia.co.in/cdn/shop/products/Kingscoffeevanillacan_2.jpg?v=1670477139');
+    background-position: center;
+    background-size: cover;
+}
+
+.pagination-div{
+    height: 150px;
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.pagination-div div{
+    color: rgb(77, 77, 77);
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    border: 0.2px solid rgb(188, 187, 187);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 400ms;
+}
+.pagination-div div h3{
+}
+.pagination-div div:hover{
+    background-color: rgb(164,95,65);
+}
+.pagination-div div:hover h3{
+    color: white;
+}
+.pagination-div #page-num-1{
+    background-color: rgb(164,95,65);
+    color: white;
+}
+
+
+
+
+
+.blog-container {
+    text-align: center;
+    padding: 100px;
+}
+
+.blog-container h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: #5c3d2e;
+    text-decoration: underline;
+}
+
+.blogs {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.blog {
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.blog img {
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.blog img:hover {
+    transform: scale(1.05);
+    opacity: 0.7;
+
+}
+
+.blog h3 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.blog p {
+    font-size: 16px;
+    color: #666;
+}
+
+.view-more {
+    background-color: #a3572a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-more:hover {
+    background-color: #833d1a;
+}
+.subscription-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('bg-search.png');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: #fff;
+}
+
+.subscription-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.subscription-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.subscription-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.subscription-form {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subscription-form form {
+    display: flex;
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #a3572a;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subscription-form button:hover {
+    background-color: #fff;
+    color: #a3572a;
+}
+
+
+
+h2 {
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #5c3d2e;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#slider{
+    overflow: hidden;
+}
+
+#slider figure{
+    display: flex;
+    position: relative;
+    margin: 0;
+    left: 0;
+    width: 110%;
+    /* animation:  5s slider infinite ; */
+    animation: 5s slider infinite;
+    /* opacity: 1;  */
+    
+    /* transform: translate3d(-610px, 0px, 0px);  */
+}
+
+
+#slider figure img{
+    float: left;
+    width: 20%;
+    background-color:#fffbf2;
+}
+@keyframes slider{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: -10%;
+    }
+    25% {
+        left: -10%;
+    }
+    45% {
+        left: -15%;
+    }
+    50% {
+        left: -15%;
+    }
+    70% {
+        left: -20%;
+    }
+    75% {
+        left: -20%
+    }
+    95% {
+        left: -25%
+    }
+    100%{
+        left: -30%;
+    }
+}
+   
+
+.container {
+    width: 100%;
+    margin-top: 40px;
+    padding: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* background-color: #f8f4ec; */
+    padding-left: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.logo-section {
+    color: black;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    padding-inline: 20px;
+}
+
+.logo-section img {
+    max-width: 100px;
+}
+
+.logo-section p {
+    margin: 10px 0;
+}
+
+.social-media a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.social-media i {
+    font-size: 20px;
+}
+.social-media a:hover i{
+    color: #a3572a;
+}
+
+.links-section {
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+    min-width: 200px;
+}
+
+.column {
+    flex: 1;
+    min-width: 150px;
+    margin-right: 20px;
+}
+
+.column h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.column ul {
+    list-style: none;
+}
+
+.column ul li {
+    margin-bottom: 8px;
+}
+.column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.column ul li a:hover {
+    text-decoration: underline;
+}
+.wp-logo{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(102, 218, 102);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    right: 30px;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wp-logo i{
+    font-size: 25px;
+    color: white;
+}
+
+.back-to-top{
+    height: 30px;
+    width: 30px;
+    background-color: #a3572a;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    right: 30px;
+    bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-to-top i{
+    font-size: 30px;
+    color: white;
+}
+
+
+
+
+/* Base styles */
+header nav .nav-logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* Media query for max-width 1050px */
+@media (max-width: 1050px) {
+    nav .nav-sec {
+        display: none;
+    }
+    .nav-icons .icon2 {
+        display: none;
+    }
+    .coffee-flavour .flavour-items .coffee-item {
+        width: 85%;
+        margin: auto;
+    }
+    header nav .nav-logo {
+        width: 70%;
+    }
+}
+
+/* Media query for min-width 1150px */
+@media (min-width: 1150px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+/* Media query for min-width 900px */
+@media (min-width: 900px) {
+    .coffee-flavour {
+        width: 100%;
+        /* background-color: rgb(210, 227, 210); */
+        position: relative; /* Changed from absolute to relative for better positioning */
+        top: 500px;
+    }
+    .flavour-items {
+        flex-wrap: nowrap;
+    }
+}
+
+/* Media query for max-width 900px */
+@media (max-width: 900px) {
+    .coffee-flavour {
+        padding-top: 2rem;
+    }
+    /* .items-container .img-div {
+        height: 80%;
+        width: 100%;
+        padding-top: 70%;
+    } */
+    .items-container .icons-div{
+        width: 60px;
+    }
+    .items-container .icons-div div{
+        height: 25px;
+        width: 25px;
+    }
+    .items-container .icons-div div i{
+        font-size: 20px;
+    }
+}
+
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .items-container {
+        flex-direction: column;
+        align-items: center; 
+    }
+    .items-container div {
+        width: 80%; 
+    }
+    .links-section {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size:medium;
+        width: auto;
+    }
+    .links-section .column{
+        
+    }
+}
+
+
+@media (max-width: 480px) {
+    .items-container div {
+        width: 100%; 
+    }
+    .items-container div {
+        width: 100%; 
+    }
+}
+
