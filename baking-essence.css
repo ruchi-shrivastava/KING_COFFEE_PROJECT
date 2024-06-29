@@ -163,7 +163,12 @@ header nav .nav-icons ul{
     display: flex;
     justify-content: space-between;
     width: 100%;
-
+    .root{
+        a{
+            text-decoration: none;
+            color: #b9bfbf;
+        }
+    }
     .root .root-color{
         color: #833d1a;
     }
@@ -736,12 +741,7 @@ header nav .nav-icons ul{
     height: 24px;
 }
 
-/* .links-section {
-    display: flex;
-    flex: 3;
-    justify-content: space-between;
-    min-width: 600px;
-} */
+
 
 .column {
     width: 20%;
